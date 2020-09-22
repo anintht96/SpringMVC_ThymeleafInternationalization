@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Spirng MVC + Thymeleaf</title>
+</head>
+<body>
+
+	<h1>Spring MVC Thymeleaf Internationalize</h1>
+	<p> Language: </p>
+	<a href="?language=en">English</a>|
+	<a href="?language=vi">Viet Name</a>|
+	<a th:href="@{/(language=ja)}">Japanese</a>|
+	<a th:href="@{/(language=fr)}">France</a>
+	
+	<p th:text="${message}"></p>
+	<p th:text=#{hello}>
+
+</body>
+</html>
